@@ -13,7 +13,6 @@ const uri = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PAS
 const validate = ["yes", "yeah", "yup", "ya", "y"];
 const negate = ["no", "nah", "nop", "n"];
 const sayHi = 'Hi';
-const options = { typing: true };
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true, });
 const connection = mongoose.connection;
@@ -64,7 +63,7 @@ const bot = new BootBot({
 async function conversation (chat) {
     chat.getUserProfile().then( async (user) => {
         const userFlag = await Users.find({ user: parseInt(user.id) }, { user: 1, _id: 0 });
-        await chat.say(sayHi, options);
+        await chat.say(sayHi);
         const askName = (convo) => {
             convo.ask(`What's your name?`, async (payload, convo) => {
                 const text = payload.message.text;
