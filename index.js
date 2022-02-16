@@ -5,7 +5,7 @@ const config = require('config');
 const shortid = require('shortid');
 const mongoose = require('mongoose');
 const Messages = require('./messagesDB');
-const Users = require('./usersDB');
+const Users = require('./usersDB'); 
 
 const app = express();
 
