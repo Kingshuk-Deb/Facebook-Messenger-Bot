@@ -61,6 +61,25 @@ npm start
 Before starting initialise your env values in .env & bootbot config variables in config/default.json file
 ```
 
+```javascript
+// Initialise .env
+MONGO_USERNAME=YOUR_MONGO_USERNAME
+MONGO_PASSWORD=YOUR_MONGO_PASSWORD
+MONGO_DBNAME=YOUR_MONGO_DBNAME
+PORT=YOUR_PORT
+```
+
+```javascript
+// Initialise config/default.json For BootBot Variables
+{
+  "accessToken": "YOUR_FACEBOOK_PAGE_ACCESS_TOKEN",
+  "verifyToken": "YOUR_FACEBOOK_PAGE_VERIFY_TOKEN",
+  "appSecret": "YOUR_FACEBOOK_APP_SECRET",
+  "botPort": "YOUR_BOT_PORT", // Withut "" Integer
+  "botTunnelSubDomain": "YOUR_BOT_LOCALTUNNEL_DOMAIN_NAME"
+} 
+```
+
 ```
 It currently runs locally only as the Facebook App is not yet published
 ```
