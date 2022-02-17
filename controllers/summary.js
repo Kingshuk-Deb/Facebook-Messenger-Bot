@@ -2,6 +2,7 @@ const Users = require('../models/usersDB');
 const Messages = require('../models/messagesDB');
 
 exports.get_Summary = async (req, res) => {
+    // Queries All Users & Messages From Mongo Collection And Pushes Them in 'summary' Array
     let summary = []; const users = await Users.find({}, { _id: 0 });
     users.map( async (element) => {
         let msg = []; const messages = await Messages.find({user_id: element.user}, { _id: 0 });
