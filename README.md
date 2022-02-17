@@ -11,7 +11,7 @@
 # DEMO VIDEO
 <a href="https://youtu.be/pMHDWzZmZNE" title="AdaKerja Assignment Video Demo">
   <p align="center">
-    <img width="75%" src="https://img.youtube.com/vi/pMHDWzZmZNE/maxresdefault.jpg" alt="AdaKerja Assignment Video Demo"/>
+    <img width="100%" src="https://img.youtube.com/vi/pMHDWzZmZNE/maxresdefault.jpg" alt="AdaKerja Assignment Video Demo"/>
   </p>
 </a>
 
@@ -36,7 +36,11 @@
 
 Made with [BootBot CLI](https://github.com/Charca/bootbot-cli)
 
-# Usage
+# Runnig on Local Machine
+
+```
+sudo npm i bootbot-cli
+```
 
 ```
 npm install
@@ -52,6 +56,10 @@ npm start
 - Express
 - Mongoose
 - Shortid
+
+```
+Before starting initialise your env values in .env & bootbot config variables in config/default.json file
+```
 
 ```
 It currently runs locally only as the Facebook App is not yet published
