@@ -15,7 +15,6 @@ exports.get_Summary = async (req, res) => {
             }
             summary.push(userObj);
             if(users.length - 1 === index) {
-                console.log(users.length)
                 res.json({result: summary});
             }
         });
