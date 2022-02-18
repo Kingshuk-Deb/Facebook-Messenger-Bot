@@ -75,7 +75,7 @@ PORT=YOUR_PORT
   "accessToken": "YOUR_FACEBOOK_PAGE_ACCESS_TOKEN",
   "verifyToken": "YOUR_FACEBOOK_PAGE_VERIFY_TOKEN",
   "appSecret": "YOUR_FACEBOOK_APP_SECRET",
-  "botPort": "YOUR_BOT_PORT", // Withut "" Integer
+  "botPort": "YOUR_BOT_PORT", // Without "" Integer
   "botTunnelSubDomain": "YOUR_BOT_LOCALTUNNEL_DOMAIN_NAME"
 } 
 ```
